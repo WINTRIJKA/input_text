@@ -1,0 +1,235 @@
+body {
+    background-color: #252839;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.forma_group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+
+}
+.forma_group input[type = "text"] {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    background: transparent;
+    transition: border-color .2s;
+}
+.forma_group input[type = "text"]::placeholder {
+    color: transparent;
+
+}
+.forma_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: .2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+.forma_group input[type = "text"]:placeholder-shown ~  .forma_label{
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+.forma_group input[type = "text"]:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #01fe87, #fe0178);
+    border-image-slice: 1;
+
+}
+.forma_group input[type = "text"]:focus ~  .forma_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: .2s;
+    font-size: 1rem;
+    color: #2afadf;
+    font-weight: 700;
+}
+.forma_group input[type = "email"] {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    background: transparent;
+    transition: border-color .2s;
+}
+.forma_group input[type = "email"]::placeholder {
+    color: transparent;
+
+}
+
+.forma_group input[type = "email"]:placeholder-shown ~  .forma_label{
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+.forma_group input[type = "email"]:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #01fe87, #fe0178);
+    border-image-slice: 1;
+
+}
+.forma_group input[type = "email"]:focus ~  .forma_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: .2s;
+    font-size: 1rem;
+    color: #2afadf;
+    font-weight: 700;
+}
+.forma_group textarea {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    background: transparent;
+    transition: border-color .2s;
+
+}
+.forma_group textarea::placeholder {
+    color: transparent;
+
+}
+.forma_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: .2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+.forma_group textarea:placeholder-shown ~  .forma_label{
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+.forma_group textarea:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #01fe87, #fe0178);
+    border-image-slice: 1;
+
+}
+.forma_group textarea:focus ~  .forma_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: .2s;
+    font-size: 1rem;
+    color: #2afadf;
+    font-weight: 700;
+}
+.forma_text_portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #252839;
+}
+.text_portfolio {
+    position: relative;
+    font-size: 3vw;
+    color: #252839;
+    -webkit-text-stroke: .1vw #383d52;
+    text-transform: uppercase;
+}
+.text_portfolio::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke: 0 #383d52;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate3 8s linear infinite;
+}
+@keyframes animate3 {
+    0%,10%,100% {
+        width: 0;
+    }
+    70%,90% {
+        width: 100%;
+    }
+}
+
+.forma_group input[type = "submit"] {
+    content: 'Отправить';
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #01fe87;
+    color: black;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    text-decoration: none;
+    transition: .5s;
+}
+.forma_group input[type = "submit"]:hover {
+    letter-spacing: .2em;
+}
+.forma_text_portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    background: #252839;
+
+}
+.text_portfolio {
+    position: relative;
+    font-size: 3vw;
+    color: #252839;
+    -webkit-text-stroke: .1vw #383d52;
+    text-transform: uppercase;
+}
+.text_portfolio::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke: 0 #383d52;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate3 8s linear infinite;
+}
+@keyframes animate3 {
+    0%,10%,100% {
+        width: 0;
+    }
+    70%,90% {
+        width: 100%;
+    }
+}
